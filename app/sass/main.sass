@@ -1,5 +1,541 @@
 @import "fonts"
 @import "vars"
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
 
+*::-webkit-input-placeholder
+  color: #2b2b2b
+  opacity: 1
 
+*:-moz-placeholder
+  color: #2b2b2b
+  opacity: 1
+
+*::-moz-placeholder
+  color: #2b2b2b
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #2b2b2b
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+.basket
+  padding: 25px
+  &-flex
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &-left
+    width: 870px
+  &-right
+    width: 270px
+    margin-left: 30px
+    margin-top: 33px
+  &-line
+    width: 100%
+    height: 8px
+    background: #E6E6E6
+    position: relative
+    &-progress
+      position: absolute
+      width: 30%
+      height: 100%
+      left: 0
+      top: 0
+      background: #F77173
+  &-title
+    font-size: 22px
+  &-main
+    margin-top: 25px
+.goods
+  background: #FFFFFF
+  border-radius: 8px
+  padding: 35px 30px 20px
+  &-item
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    padding: 10px 0
+    border-bottom: 1px solid #D8D8D8
+    &:last-child
+      border-bottom: none
+  &-img
+    max-width: 147px
+    margin-right: 25px
+  &-info
+    width: 365px
+    padding-right: 30px
+    margin-top: 20px
+  &-name
+    color: #0E0E10
+    text-decoration: none
+    font-size: 18px
+  &-article
+    font-size: 15px
+    color: #AAAAAA
+    margin-top: 10px
+  &-number
+    .quantity-control-input .jq-number
+      width: 104px
+      height: 27px
+      padding: 0 34px
+      background: #F4F4F4
+    .quantity-control-input
+      position: relative
+    .quantity-control-input .jq-number__field input
+      width: 100%
+      margin-top: 1px
+      border: 1px solid transparent
+      font-size: 14px
+      outline: none
+      height: 25px
+      text-align: right
+    .quantity-control-input .jq-number__spin.minus
+      width: 34px
+      cursor: pointer
+      &:hover
+        background: #E6E6E6
+    .quantity-control-input .jq-number__spin.plus
+      width: 34px
+      &:hover
+        background: #E6E6E6
+      cursor: pointer
+    .quantity-control-input .jq-number__spin.minus:before
+      width: 100%
+    .quantity-control-input .jq-number__spin.plus:before
+      width: 100%
+  &-number
+    text-align: center
+    margin-top: 20px
+    padding-right: 40px
+  &-price
+    margin-top: 10px
+    font-size: 14px
+  .basket-list-item__element
+    margin-top: 20px
+.order
+  border-radius: 8px
+  background: #FFFFFF
+  padding: 35px 30px
+  margin-top: 15px
+  &-btn
+    width: 100%
+    height: 62px
+    line-height: 62px
+  &-description
+    text-align: center
+    color: #121212
+    font-size: 12px
+    margin-top: 20px
+  &-link
+    color: #4D78D3
+    text-decoration: none
+  &-step
+    border-top: 1px solid #D8D8D8
+    margin-top: 10px
+    padding: 25px 0 20px
+    &_nopad
+      padding-bottom: 0
+  &-title
+    font-size: 18px
+    &-city
+      color: #F77273
+      cursor: pointer
+    &-img
+      width: 12px
+      position: relative
+      top: -3px
+      left: 5px
+      display: inline-block
+      cursor: pointer
+  &-left
+    width: 530px
+  &-right
+    width: 254px
+  &-flex
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+.delivery
+  &-tabs
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+  &-tab
+    width: calc(50% - 8px)
+    border: 1px solid #D8D8D8
+    border-radius: 4px
+    padding: 17px 30px 15px 25px
+    cursor: pointer
+    transition: all .5s ease
+    &.active
+      background: rgba(247, 113, 115, 0.06)
+      border-color: #707070
+    &-title
+      font-size: 15px
+      font-family: "ProximaNova-Bold"
+    &-text
+      color: #A9A9A9
+      font-size: 14px
+      margin-top: 10px
+      line-height: 1.28
+.location
+  margin-top: 35px
+  &-end
+    margin-top: 20px
+    .location-description
+      margin-bottom: 0
+    &-content
+      border: 1px solid #D8D8D8
+      border-radius: 8px 8px 0 0
+      padding: 25px 25px
+      display: flex
+      justify-content: space-between
+    &-item
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      margin-bottom: 10px
+    &-name
+      margin-right: 20px
+      font-size: 12px
+    &-btn.my-btn
+      font-size: 12px
+      text-decoration: none
+      font-family: "ProximaNova-Regular", sans-serif
+      padding: 8px 14px
+    &-bottom
+      text-align: right
+    &-right
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &-map
+      border-radius: 0 0 8px 8px
+      overflow: hidden
+      margin-bottom: 30px
+  &-input
+    outline: none
+    &_md.custom-input__input
+      width: 117px
+      margin-right: 15px
+    &_sm.custom-input__input
+      width: 103px
+      margin-right: 15px
+    &_xs.custom-input__input
+      width: 83px
+      margin-right: 15px
+  &-row
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin-top: 25px
+    &_between
+      justify-content: space-between
+  &-label
+    display: flex
+    justify-content: flex-start
+    position: relative
+    &_connect
+      margin-bottom: 10px
+    &-text
+      font-size: 14px
+      line-height: 1.4
+    &-checkbox
+      width: 12px
+      height: 12px
+      position: absolute
+      opacity: 0
+      margin: 3px 0 0
+      &:checked ~ .location-label-check
+        border-color: #F77273
+        &:before
+          opacity: 1
+    &-check
+      width: 12px
+      height: 12px
+      border: 1px solid #D8D8D8
+      border-radius: 2px
+      flex-shrink: 0
+      margin: 3px 12px 0 0
+      position: relative
+      transition: border-color .5s ease
+      &:before
+        position: absolute
+        content: ''
+        width: 8px
+        height: 5px
+        border: 2px solid #F77273
+        border-right: none
+        border-top: none
+        transform: rotate(-45deg)
+        left: 1px
+        top: 1px
+        opacity: 0
+        transition: opacity .5s ease
+  &-form
+    margin-top: 25px
+    &-add
+      font-size: 16px
+      color: #F77273
+      text-decoration: underline
+      text-decoration-style: dotted
+    &-comment
+      margin-top: 30px
+    &-textarea.custom-input__input
+      margin-top: 20px
+      outline: none
+      display: none
+      &.active
+        display: block
+  &-description
+    font-size: 14px
+    color: #A9A9A9
+    margin: 25px 0 20px
+  &-pin
+    display: flex
+    &-tab
+      font-size: 12px
+      width: 83px
+      text-align: center
+      height: 32px
+      line-height: 32px
+      //border: 1px solid #D8D8D8
+      cursor: pointer
+      position: relative
+      &:before
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        border: 1px solid #D8D8D8
+        content: ''
+      &:first-child
+        border-radius: 4px 0 0 4px
+        &:before
+          border-radius: 4px 0 0 4px
+      &:last-child
+        border-radius: 0 4px 4px 0
+        &:before
+          border-radius: 0 4px 4px 0
+      &.active
+        background: linear-gradient(to right, #F77173, #FB9B7C)
+        color: #FFFFFF
+        &:before
+          border-color: transparent
+  &-map
+    min-height: 100px
+    background: red
+  &-change
+    margin-top: 15px
+    &-item
+      display: none
+      &.active
+        display: block
+  &-item
+    display: none
+    &.active
+      display: block
+.variant
+  background: #F4F4F4
+  border-radius: 8px
+  padding: 23px 15px
+  &-title
+    font-size: 16px
+  &-form
+    margin-top: 15px
+  &-label
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    margin-bottom: 20px
+    position: relative
+    cursor: pointer
+    &_pay
+      margin: 10px 0 0
+    &-text
+      color: #A9A9A9
+      font-size: 14px
+  &-text
+    font-family: "ProximaNova-Bold", sans-serif
+    font-size: 14px
+    &_active
+      color: #F77273
+  &-description
+    font-size: 14px
+    color: #A9A9A9
+  &-input
+    position: absolute
+    top: 0
+    left: 0
+    width: 12px
+    height: 12px
+    margin: 4px 15px 0 0
+    opacity: 0
+    &:checked ~
+      .variant-radio:before
+        opacity: 1
+  &-radio
+    width: 12px
+    height: 12px
+    margin: 4px 15px 0 0
+    border: 1px solid #D8D8D8
+    border-radius: 50%
+    position: relative
+    &:before
+      position: absolute
+      content: ''
+      width: 4px
+      height: 4px
+      border-radius: 50%
+      background: red
+      opacity: 0
+      transition: opacity .5s ease
+      left: calc(50% - 2px)
+      top: calc(50% - 2px)
+.list
+  border: 1px solid #D8D8D8
+  border-radius: 8px
+  max-height: 430px
+  overflow: auto
+  &-item
+    padding: 10px 0 0
+    transition: background-color .5s ease
+    cursor: pointer
+    &:last-child
+      .list-item-container
+        border-bottom: 0
+    &:hover
+      background: rgba(231, 231, 235, 0.3)
+    &-container
+      margin: 0 25px 0 25px
+      padding: 12px 0 18px
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      border-bottom: 1px solid #D8D8D8
+  &-name
+    &-title
+      color: #121212
+      font-size: 12px
+    &-text
+      font-size: 14px
+      color: #120D3D
+      margin-top: 7px
+      font-family: "ProximaNova-Bold", sans-serif
+  &-left
+    width: 330px
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+  &-img
+    width: 24px
+    margin-right: 15px
+  &-right
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    width: 280px
+    padding-right: 15px
+  &-date
+    &_marg
+      margin-top: 10px
+      .list-date-day
+        margin-bottom: 10px
+    &-day
+      font-size: 14px
+      color: #121212
+    &-time
+      color: #A9A9A9
+      font-size: 12px
+      margin-top: 5px
+  &-price
+    &-number
+      font-family: "ProximaNova-Bold", sans-serif
+    &-items
+      margin-top: 2px
+      text-align: right
+.connect
+  &-form
+    margin-top: 20px
+    .location-input
+      margin-bottom: 20px
+      &:last-of-type
+        margin-bottom: 10px
+  &-small
+    color: #A9A9A9
+    font-size: 12px
+    margin-bottom: 25px
+.total
+  background: #FFFFFF
+  border-radius: 8px
+  overflow: hidden
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.16)
+  &-top
+    padding: 17px 20px 15px 15px
+  &-title
+    font-size: 15px
+    color: #121212
+    font-family: "ProximaNova-Bold"
+    margin-bottom: 25px
+  &-row
+    font-size: 14px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 10px
+    &-left
+      line-height: 1.5
+      max-width: 130px
+      color: #A9A9A9
+      &.dark
+        color: #121212
+    &-right
+      margin-top: 5px
+      color: #121212
+      &.active
+        color: #F77273
+      &_total
+        font-size: 22px
+        margin-top: 0
+  &-bottom
+    background: #E6E6E6
+    padding: 20px 20px 5px
 @import "media" // Всегда в конце

@@ -3672,14 +3672,14 @@ p.none_pr{
 
 .quantity-control-input .jq-number__spin.minus:before {
   left: 0;
-  background-image: url("../../img/minus.svg"); }
+  background-image: url("../img/minus.svg"); }
 
 .quantity-control-input .jq-number__spin.plus {
   right: 0; }
 
 .quantity-control-input .jq-number__spin.plus:before {
   right: 0;
-  background-image: url("../../img/plus.svg"); }
+  background-image: url("../img/plus.svg"); }
 .quantity-control{
 	  display: none !important;
 }
