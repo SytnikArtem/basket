@@ -17,73 +17,324 @@
 </head>
 
 <body>
-	<div class="basket">
-		<div class="container">
-			<div class="basket-block">
-				<div class="basket-flex">
-					<div class="basket-left">
+	<div class="basket-scroll">
+		<header class="header">
+			<div class="container">
+				<div class="header-basket">
+					<div class="header-basket-back mobile-items step-second">
+						<img src="img/back.svg" alt="" width="12px">
+						<p class="header-basket-back-text">Назад</p>
+					</div>
+					<div class="header-basket-back mobile-items step-third">
+						<img src="img/back.svg" alt="" width="12px">
+						<p class="header-basket-back-text">Назад</p>
+					</div>
+					<div class="header-basket-step mobile-items">
+						<p class="header-basket-number">Шаг</p>
+						<p class="header-basket-number header-basket-number_current">2</p>
+						<p class="header-basket-number">из 3</p>
+					</div>
+					<div class="header-basket-left">
+						<a href="" class="logo">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="header-basket-right">
+						<div class="call-info">
+							<div class="call-info__item">
+								<a class="calltracking1" href="tel:+78005508612">8-800-550-86-12</a>
+								<p>пн-вс 09:00 - 22:00</p>
+							</div>
+							<div class="call-info__btn">
+								<a href="#callBack" class="my-btn js-popup">Заказать звонок</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="success">
+			<div class="container">
+				<div class="success-content">
+					<p class="success-info">Заказ №4349970</p>
+					<h4 class="success-title"><span class="success-title_active">Спасибо!</span> Заказ оформлен</h4>
+					<p class="success-text">Заказ будет доставлен 11 декабря, через 2 дня по адресу: Москва, пр. Черепановых, д.74, кв 37</p>
+					<p class="success-text success-text_sm">Как только заказ будет на месте, вам придёт смс.</p>
+					<p class="success-description">Если у вас остались вопросы свяжитесь с нами</p>
+					<img src="img/expert.png" alt="" class="success-img">
+				</div>
+			</div>
+		</div>
+		<div class="basket">
+			<div class="container">
+				<div class="basket-block">
+					<div class="basket-left basket-left_sticky">
 						<div class="basket-line">
 							<div class="basket-line-progress"></div>
 						</div>
-						<div class="basket-main">
-							<div class="basket-goods goods">
-								<h4 class="basket-title">В корзине 4 товара</h4>
-								<div class="goods-item">
-									<img src="img/good1.png" alt="" class="goods-img">
-									<div class="goods-info">
-										<a href="" class="goods-name">Детский двухместный электромобиль A222AA желтый</a>
-										<p class="goods-article">Арт. A222AA-MINI</p>
-									</div>
-									<div class="goods-number">
-										<div class="quantity-control-input">
-											<input type="number" class="js-style basket-input" value="1" readonly>
+					</div>
+					<div class="basket-flex">
+						<div class="basket-left">
+							<div class="basket-main">
+								<div class="basket-goods goods">
+									<h4 class="basket-title">В корзине 4 товара</h4>
+									<div class="goods-item">
+										<div class="goods-left">
+											<img src="img/good1.png" alt="" class="goods-img">
 										</div>
-										<div class="goods-price">19 159р./шт.</div>
+										<div class="goods-right">
+											<div class="goods-info">
+												<a href="" class="goods-name">Детский двухместный электромобиль A222AA желтый</a>
+												<p class="goods-article">Арт. A222AA-MINI</p>
+											</div>
+											<div class="goods-number">
+												<div class="quantity-control-input">
+													<input type="number" class="js-style basket-input" value="1" readonly>
+												</div>
+												<div class="goods-price">19 159р./шт.</div>
+											</div>
+											<div class="basket-list-item__element basket-list-item__price-total">
+												<p>14599р.</p>
+											</div>
+											<div class="goods-close">
+												<img src="img/close.svg" alt="" class="goods-close-img">
+											</div>
+										</div>
 									</div>
-									<div class="basket-list-item__element basket-list-item__price-total">
-										<p>14599р.</p>
+									<div class="goods-item">
+										<div class="goods-left">
+											<img src="img/good2.png" alt="" class="goods-img">
+										</div>
+										<div class="goods-right">
+											<div class="goods-info">
+												<a href="" class="goods-name">Детский электроквадроцикл A001MP золотой</a>
+												<p class="goods-article">Арт. A001MP-GOLD</p>
+											</div>
+											<div class="goods-number">
+												<div class="quantity-control-input">
+													<input type="number" class="js-style basket-input" value="1" readonly>
+												</div>
+												<div class="goods-price">19 159р./шт.</div>
+											</div>
+											<div class="basket-list-item__element basket-list-item__price-total">
+												<p>14599р.</p>
+											</div>
+											<div class="goods-close">
+												<img src="img/close.svg" alt="" class="goods-close-img">
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="goods-item">
-									<img src="img/good2.png" alt="" class="goods-img">
-									<div class="goods-info">
-										<a href="" class="goods-name">Детский электроквадроцикл A001MP золотой</a>
-										<p class="goods-article">Арт. A001MP-GOLD</p>
+								<div class="mobile-first">
+									<div class="mobile-total">
+										<p class="mobile-total-left">Итого к оплате</p>
+										<p class="mobile-total-right">12 159р.</p>
 									</div>
-									<div class="goods-number">
-										<div class="quantity-control-input">
-											<input type="number" class="js-style basket-input" value="1" readonly>
-										</div>
-										<div class="goods-price">19 159р./шт.</div>
-									</div>
-									<div class="basket-list-item__element basket-list-item__price-total">
-										<p>14599р.</p>
-									</div>
+									<div class="mobile-btn mobile-btn_goods my-btn">Оформить заказ</div>
 								</div>
-							</div>
-							<div class="basket-order order">
-								<form action="">
-									<h4 class="basket-title">Оформление заказа</h4>
-									<div class="order-step">
-										<div class="order-left">
-											<h6 class="order-title">Выберите удобный способ получения заказа в <span class="order-title-city">г. Москва <img
-													src="img/arrow.svg" alt="" class="order-title-img"></span></h6>
-											<div class="order-delivery delivery">
-												<div class="delivery-tabs">
-													<div class="delivery-tab delivery-tab_js delivery-tab_courier active">
-														<p class="delivery-tab-title">Доставка курьером</p>
-														<p class="delivery-tab-text">Заказ приедет по выбранному адресу 21 января 2019</p>
-													</div>
-													<div class="delivery-tab delivery-tab_js delivery-tab_self">
-														<p class="delivery-tab-title">Самовывоз</p>
-														<p class="delivery-tab-text">Можно забрать из 33 пунктов выдачи</p>
-													</div>
+								<div class="goods goods-mobile">
+									<h4 class="basket-title">Детали заказа</h4>
+									<div class="goods-list">
+										<div class="goods-item">
+											<div class="goods-left">
+												<img src="img/good1.png" alt="" class="goods-img">
+											</div>
+											<div class="goods-right">
+												<div class="goods-info">
+													<a href="" class="goods-name">Детский двухместный электромобиль A222AA желтый</a>
+													<p class="goods-article">Арт. A222AA-MINI</p>
+												</div>
+												<div class="goods-number">
+													<div class="goods-price">2 шт.</div>
+												</div>
+												<div class="goods-close">
+													<img src="img/close.svg" alt="" class="goods-close-img">
 												</div>
 											</div>
 										</div>
-										<div class="location">
-											<div class="location-item active">
-												<div class="order-flex">
+										<div class="goods-item">
+											<div class="goods-left">
+												<img src="img/good2.png" alt="" class="goods-img">
+											</div>
+											<div class="goods-right">
+												<div class="goods-info">
+													<a href="" class="goods-name">Детский электроквадроцикл A001MP золотой</a>
+													<p class="goods-article">Арт. A001MP-GOLD</p>
+												</div>
+												<div class="goods-number">
+													<div class="goods-price">2 шт.</div>
+												</div>
+												<div class="goods-close">
+													<img src="img/close.svg" alt="" class="goods-close-img">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="mobile-second">
+									<div class="total-top">
+										<div class="total-row">
+											<p class="total-row-left">Товары (3)</p>
+											<p class="total-row-right">47 421р.</p>
+										</div>
+										<div class="total-row">
+											<p class="total-row-left">Доставка курьером 13 декабря (чт), через 2 дня</p>
+											<p class="total-row-right">900р.</p>
+										</div>
+										<div class="total-row hide">
+											<p class="total-row-left">Способ оплаты</p>
+											<p class="total-row-right">При получении банковской картой</p>
+										</div>
+										<div class="total-row">
+											<p class="total-row-left">Скидки на товары</p>
+											<p class="total-row-right active">-13 942р.</p>
+										</div>
+									</div>
+									<div class="mobile-total">
+										<p class="mobile-total-left">Итого к оплате</p>
+										<p class="mobile-total-right">12 159р.</p>
+									</div>
+									<div class="mobile-btn mobile-btn_confirm my-btn">Подтвердить заказ</div>
+									<div class="location-item location-item_last">
+										<h6 class="order-title">Выбранный пункт самовывоза</h6>
+										<div class="location-end">
+											<div class="location-end-content">
+												<div class="location-end-left">
+													<div class="list-name">
+														<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22</span></p>
+														<p class="list-name-text">Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+													</div>
+													<div class="list-date list-date_marg">
+														<p class="list-date-day">Можно забрать с 21 декабря, через 10 дней</p>
+														<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+														<p class="list-date-time">В момент доставки заказа в пункт выдачи, вам поступит смс</p>
+													</div>
+												</div>
+												<div class="location-end-right">
+													<div class="location-end-top">
+														<div class="location-end-item">
+															<div class="location-end-name">Стоимость</div>
+															<div class="list-price-number">199р.</div>
+														</div>
+														<div class="location-end-item">
+															<div class="location-end-name">Способы оплаты</div>
+															<div class="list-price-items">
+																<img src="img/pay1.svg" alt="" width="16px">
+																<img src="img/pay2.svg" alt="" width="14px">
+															</div>
+														</div>
+													</div>
+													<div class="location-end-bottom">
+														<a href="" class="location-end-btn my-btn">Выбрать другой</a>
+														<a href="tel:+74993915622" class="location-end-link">+7(499)391-56-22</a>
+													</div>
+													<p class="list-date-time list-date-time_mob">В момент доставки заказа в пункт выдачи, вам поступит смс</p>
+												</div>
+											</div>
+											<div class="location-end-map">
+												<div class="location-map"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket-goods goods goods_success">
+									<h4 class="basket-title">Детали заказа</h4>
+									<div class="goods-list">
+										<div class="goods-item">
+											<div class="goods-left">
+												<img src="img/good1.png" alt="" class="goods-img">
+											</div>
+											<div class="goods-right">
+												<div class="goods-info">
+													<a href="" class="goods-name">Детский двухместный электромобиль A222AA желтый</a>
+													<p class="goods-article">Арт. A222AA-MINI</p>
+												</div>
+												<div class="goods-number">
+													<div class="goods-price">2 шт.</div>
+												</div>
+												<div class="goods-close">
+													<img src="img/close.svg" alt="" class="goods-close-img">
+												</div>
+											</div>
+										</div>
+										<div class="goods-item">
+											<div class="goods-left">
+												<img src="img/good2.png" alt="" class="goods-img">
+											</div>
+											<div class="goods-right">
+												<div class="goods-info">
+													<a href="" class="goods-name">Детский электроквадроцикл A001MP золотой</a>
+													<p class="goods-article">Арт. A001MP-GOLD</p>
+												</div>
+												<div class="goods-number">
+													<div class="goods-price">2 шт.</div>
+												</div>
+												<div class="goods-close">
+													<img src="img/close.svg" alt="" class="goods-close-img">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="location-item location-item_success">
+										<h6 class="order-title">Выбранный пункт самовывоза</h6>
+										<div class="location-end">
+											<div class="location-end-content">
+												<div class="location-end-left">
+													<div class="list-name">
+														<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
+														<p class="list-name-text">Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+													</div>
+													<div class="list-date list-date_marg">
+														<p class="list-date-day">Можно забрать с 21 декабря, через 10 дней</p>
+														<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+														<p class="list-date-time">В момент доставки заказа в пункт выдачи, вам поступит смс</p>
+													</div>
+												</div>
+												<div class="location-end-right">
+													<div class="location-end-top">
+														<div class="location-end-item">
+															<div class="location-end-name">Стоимость</div>
+															<div class="list-price-number">199р.</div>
+														</div>
+														<div class="location-end-item">
+															<div class="location-end-name">Способы оплаты</div>
+															<div class="list-price-items">
+																<img src="img/pay1.svg" alt="" width="16px">
+																<img src="img/pay2.svg" alt="" width="14px">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="location-end-map">
+												<div class="location-map"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="basket-order order">
+									<form action="">
+										<h4 class="basket-title">Оформление заказа</h4>
+										<div class="order-step">
+											<div class="order-left">
+												<h6 class="order-title">Выберите удобный способ получения заказа в <span class="order-title-city">г. Москва <img
+														src="img/arrow.svg" alt="" class="order-title-img"></span></h6>
+												<div class="order-delivery delivery">
+													<div class="delivery-tabs">
+														<div class="delivery-tab delivery-tab_js delivery-tab_courier active">
+															<p class="delivery-tab-title">Доставка курьером</p>
+															<p class="delivery-tab-text">Заказ приедет по выбранному адресу 21 января 2019</p>
+														</div>
+														<div class="delivery-tab delivery-tab_js delivery-tab_self">
+															<p class="delivery-tab-title">Самовывоз</p>
+															<p class="delivery-tab-text">Можно забрать из 33 пунктов выдачи</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="location">
+												<div class="location-item active">
+													<div class="order-flex">
 														<div class="order-left">
 															<h6 class="order-title">Куда доставить заказ?</h6>
 															<div class="location-form">
@@ -137,330 +388,361 @@
 															</div>
 														</div>
 													</div>
-											</div>
-											<div class="location-item">
-												<h6 class="order-title">Выберите пункт самовывоза в Москве (61)</h6>
-												<div class="location-row location-row_between">
-													<label class="location-label location-label_marg">
-														<input type="checkbox" class="location-label-checkbox">
-														<span class="location-label-check"></span>
-														<p class="location-label-text">Работают без выходных</p>
-													</label>
-													<label class="location-label location-label_marg">
-														<input type="checkbox" class="location-label-checkbox">
-														<span class="location-label-check"></span>
-														<p class="location-label-text">Работают после 19:00</p>
-													</label>
-													<label class="location-label location-label_marg">
-														<input type="checkbox" class="location-label-checkbox">
-														<span class="location-label-check"></span>
-														<p class="location-label-text">Принимают платежные карты</p>
-													</label>
-													<div class="location-pin">
-														<div class="location-pin-tab">Списком</div>
-														<div class="location-pin-tab active">На карте</div>
-													</div>
 												</div>
-												<div class="location-change">
-													<div class="location-change-item">
-														<ul class="location-list list">
-															<li class="list-item">
-																<div class="list-item-container">
-																	<div class="list-left">
-																		<img src="img/item1.png" alt="" class="list-img">
-																		<div class="list-name">
-																			<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
-																			<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
-																		</div>
-																	</div>
-																	<div class="list-right">
-																		<div class="list-date">
-																			<p class="list-date-day">21 декабря, через 10 дней</p>
-																			<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
-																		</div>
-																		<div class="list-price">
-																			<div class="list-price-number">199р.</div>
-																			<div class="list-price-items">
-																				<img src="img/pay1.svg" alt="" width="16px">
-																				<img src="img/pay2.svg" alt="" width="14px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</li>
-															<li class="list-item">
-																<div class="list-item-container">
-																	<div class="list-left">
-																		<img src="img/item1.png" alt="" class="list-img">
-																		<div class="list-name">
-																			<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
-																			<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
-																		</div>
-																	</div>
-																	<div class="list-right">
-																		<div class="list-date">
-																			<p class="list-date-day">21 декабря, через 10 дней</p>
-																			<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
-																		</div>
-																		<div class="list-price">
-																			<div class="list-price-number">199р.</div>
-																			<div class="list-price-items">
-																				<img src="img/pay1.svg" alt="" width="16px">
-																				<img src="img/pay2.svg" alt="" width="14px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</li>
-															<li class="list-item">
-																<div class="list-item-container">
-																	<div class="list-left">
-																		<img src="img/item1.png" alt="" class="list-img">
-																		<div class="list-name">
-																			<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
-																			<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
-																		</div>
-																	</div>
-																	<div class="list-right">
-																		<div class="list-date">
-																			<p class="list-date-day">21 декабря, через 10 дней</p>
-																			<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
-																		</div>
-																		<div class="list-price">
-																			<div class="list-price-number">199р.</div>
-																			<div class="list-price-items">
-																				<img src="img/pay1.svg" alt="" width="16px">
-																				<img src="img/pay2.svg" alt="" width="14px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</li>
-															<li class="list-item">
-																<div class="list-item-container">
-																	<div class="list-left">
-																		<img src="img/item1.png" alt="" class="list-img">
-																		<div class="list-name">
-																			<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
-																			<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
-																		</div>
-																	</div>
-																	<div class="list-right">
-																		<div class="list-date">
-																			<p class="list-date-day">21 декабря, через 10 дней</p>
-																			<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
-																		</div>
-																		<div class="list-price">
-																			<div class="list-price-number">199р.</div>
-																			<div class="list-price-items">
-																				<img src="img/pay1.svg" alt="" width="16px">
-																				<img src="img/pay2.svg" alt="" width="14px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</li>
-															<li class="list-item">
-																<div class="list-item-container">
-																	<div class="list-left">
-																		<img src="img/item1.png" alt="" class="list-img">
-																		<div class="list-name">
-																			<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
-																			<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
-																		</div>
-																	</div>
-																	<div class="list-right">
-																		<div class="list-date">
-																			<p class="list-date-day">21 декабря, через 10 дней</p>
-																			<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
-																		</div>
-																		<div class="list-price">
-																			<div class="list-price-number">199р.</div>
-																			<div class="list-price-items">
-																				<img src="img/pay1.svg" alt="" width="16px">
-																				<img src="img/pay2.svg" alt="" width="14px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</li>
-															<li class="list-item">
-																<div class="list-item-container">
-																	<div class="list-left">
-																		<img src="img/item1.png" alt="" class="list-img">
-																		<div class="list-name">
-																			<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
-																			<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
-																		</div>
-																	</div>
-																	<div class="list-right">
-																		<div class="list-date">
-																			<p class="list-date-day">21 декабря, через 10 дней</p>
-																			<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
-																		</div>
-																		<div class="list-price">
-																			<div class="list-price-number">199р.</div>
-																			<div class="list-price-items">
-																				<img src="img/pay1.svg" alt="" width="16px">
-																				<img src="img/pay2.svg" alt="" width="14px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</li>
-															<li class="list-item">
-																<div class="list-item-container">
-																	<div class="list-left">
-																		<img src="img/item1.png" alt="" class="list-img">
-																		<div class="list-name">
-																			<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
-																			<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
-																		</div>
-																	</div>
-																	<div class="list-right">
-																		<div class="list-date">
-																			<p class="list-date-day">21 декабря, через 10 дней</p>
-																			<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
-																		</div>
-																		<div class="list-price">
-																			<div class="list-price-number">199р.</div>
-																			<div class="list-price-items">
-																				<img src="img/pay1.svg" alt="" width="16px">
-																				<img src="img/pay2.svg" alt="" width="14px">
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</li>
-														</ul>
-													</div>
-													<div class="location-change-item active">
-														<div class="location-map"></div>
-													</div>
-												</div>
-											</div>
-											<div class="location-item">
-												<h6 class="order-title">Выбранный пункт самовывоза</h6>
-												<div class="location-end">
-													<div class="location-end-content">
-														<div class="location-end-left">
-															<div class="list-name">
-																<p class="list-name-title">Пункт выдачи посылок Boxberry  +7(499)391-56-22</p>
-																<p class="list-name-text">Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+												<div class="location-item location-item_fixed">
+													<h6 class="order-title">Выберите пункт самовывоза в Москве (61)</h6>
+													<div class="location-row location-row_between">
+														<div class="location-row-mobile">
+															<div class="location-row-arrow">
+																<img src="img/back.svg" alt="" width="12px">
 															</div>
-															<div class="list-date list-date_marg">
-																<p class="list-date-day">Можно забрать с 21 декабря, через 10 дней</p>
-																<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
-																<p class="list-date-time">В момент доставки заказа в пункт выдачи, вам поступит смс</p>
+															<div class="location-row-info">
+																<p class="location-row-info-name">Пукты самовывоза</p>
+																<p class="location-row-info-city">Москва</p>
 															</div>
 														</div>
-														<div class="location-end-right">
-															<div class="location-end-top">
-																<div class="location-end-item">
-																	<div class="location-end-name">Стоимость</div>
-																	<div class="list-price-number">199р.</div>
+														<div class="location-row-right">
+															<div class="location-row-block">
+																<div class="location-row-list">
+																	<label class="location-label location-label_marg">
+																		<input type="checkbox" class="location-label-checkbox">
+																		<span class="location-label-check"></span>
+																		<p class="location-label-text">Работают без выходных</p>
+																	</label>
+																	<label class="location-label location-label_marg">
+																		<input type="checkbox" class="location-label-checkbox">
+																		<span class="location-label-check"></span>
+																		<p class="location-label-text">Работают после 19:00</p>
+																	</label>
+																	<label class="location-label location-label_marg">
+																		<input type="checkbox" class="location-label-checkbox">
+																		<span class="location-label-check"></span>
+																		<p class="location-label-text">Принимают платежные карты</p>
+																	</label>
 																</div>
-																<div class="location-end-item">
-																	<div class="location-end-name">Способы оплаты</div>
-																	<div class="list-price-items">
-																		<img src="img/pay1.svg" alt="" width="16px">
-																		<img src="img/pay2.svg" alt="" width="14px">
-																	</div>
-																</div>
+																<div class="location-pin-setting"></div>
 															</div>
-															<div class="location-end-bottom">
-																<a href="" class="location-end-btn my-btn">Выбрать другой</a>
+															<div class="location-pin">
+																<div class="location-pin-tab">Списком</div>
+																<div class="location-pin-tab active">На карте</div>
 															</div>
 														</div>
 													</div>
-													<div class="location-end-map">
-														<div class="location-map"></div>
+													<div class="location-change">
+														<div class="location-change-item">
+															<ul class="location-list list">
+																<li class="list-item">
+																	<div class="list-item-container">
+																		<div class="list-left">
+																			<img src="img/item1.png" alt="" class="list-img">
+																			<div class="list-name">
+																				<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22<</span>/p>
+																				<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+																			</div>
+																		</div>
+																		<div class="list-right">
+																			<div class="list-date">
+																				<p class="list-date-day">21 декабря, через 10 дней</p>
+																				<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+																			</div>
+																			<div class="list-price">
+																				<div class="list-price-number">199р.</div>
+																				<div class="list-price-items">
+																					<img src="img/pay1.svg" alt="" width="16px">
+																					<img src="img/pay2.svg" alt="" width="14px">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="list-btn">Заберу отсюда</div>
+																	</div>
+																</li>
+																<li class="list-item">
+																	<div class="list-item-container">
+																		<div class="list-left">
+																			<img src="img/item1.png" alt="" class="list-img">
+																			<div class="list-name">
+																				<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22<</span>/p>
+																				<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+																			</div>
+																		</div>
+																		<div class="list-right">
+																			<div class="list-date">
+																				<p class="list-date-day">21 декабря, через 10 дней</p>
+																				<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+																			</div>
+																			<div class="list-price">
+																				<div class="list-price-number">199р.</div>
+																				<div class="list-price-items">
+																					<img src="img/pay1.svg" alt="" width="16px">
+																					<img src="img/pay2.svg" alt="" width="14px">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="list-btn">Заберу отсюда</div>
+																	</div>
+																</li>
+																<li class="list-item">
+																	<div class="list-item-container">
+																		<div class="list-left">
+																			<img src="img/item1.png" alt="" class="list-img">
+																			<div class="list-name">
+																				<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22<</span>/p>
+																				<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+																			</div>
+																		</div>
+																		<div class="list-right">
+																			<div class="list-date">
+																				<p class="list-date-day">21 декабря, через 10 дней</p>
+																				<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+																			</div>
+																			<div class="list-price">
+																				<div class="list-price-number">199р.</div>
+																				<div class="list-price-items">
+																					<img src="img/pay1.svg" alt="" width="16px">
+																					<img src="img/pay2.svg" alt="" width="14px">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="list-btn">Заберу отсюда</div>
+																	</div>
+																</li>
+																<li class="list-item">
+																	<div class="list-item-container">
+																		<div class="list-left">
+																			<img src="img/item1.png" alt="" class="list-img">
+																			<div class="list-name">
+																				<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22<</span>/p>
+																				<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+																			</div>
+																		</div>
+																		<div class="list-right">
+																			<div class="list-date">
+																				<p class="list-date-day">21 декабря, через 10 дней</p>
+																				<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+																			</div>
+																			<div class="list-price">
+																				<div class="list-price-number">199р.</div>
+																				<div class="list-price-items">
+																					<img src="img/pay1.svg" alt="" width="16px">
+																					<img src="img/pay2.svg" alt="" width="14px">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="list-btn">Заберу отсюда</div>
+																	</div>
+																</li>
+																<li class="list-item">
+																	<div class="list-item-container">
+																		<div class="list-left">
+																			<img src="img/item1.png" alt="" class="list-img">
+																			<div class="list-name">
+																				<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22<</span>/p>
+																				<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+																			</div>
+																		</div>
+																		<div class="list-right">
+																			<div class="list-date">
+																				<p class="list-date-day">21 декабря, через 10 дней</p>
+																				<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+																			</div>
+																			<div class="list-price">
+																				<div class="list-price-number">199р.</div>
+																				<div class="list-price-items">
+																					<img src="img/pay1.svg" alt="" width="16px">
+																					<img src="img/pay2.svg" alt="" width="14px">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="list-btn">Заберу отсюда</div>
+																	</div>
+																</li>
+																<li class="list-item">
+																	<div class="list-item-container">
+																		<div class="list-left">
+																			<img src="img/item1.png" alt="" class="list-img">
+																			<div class="list-name">
+																				<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22<</span>/p>
+																				<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+																			</div>
+																		</div>
+																		<div class="list-right">
+																			<div class="list-date">
+																				<p class="list-date-day">21 декабря, через 10 дней</p>
+																				<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+																			</div>
+																			<div class="list-price">
+																				<div class="list-price-number">199р.</div>
+																				<div class="list-price-items">
+																					<img src="img/pay1.svg" alt="" width="16px">
+																					<img src="img/pay2.svg" alt="" width="14px">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="list-btn">Заберу отсюда</div>
+																	</div>
+																</li>
+																<li class="list-item">
+																	<div class="list-item-container">
+																		<div class="list-left">
+																			<img src="img/item1.png" alt="" class="list-img">
+																			<div class="list-name">
+																				<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22<</span>/p>
+																				<p class="list-name-text">141077, Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+																			</div>
+																		</div>
+																		<div class="list-right">
+																			<div class="list-date">
+																				<p class="list-date-day">21 декабря, через 10 дней</p>
+																				<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+																			</div>
+																			<div class="list-price">
+																				<div class="list-price-number">199р.</div>
+																				<div class="list-price-items">
+																					<img src="img/pay1.svg" alt="" width="16px">
+																					<img src="img/pay2.svg" alt="" width="14px">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="list-btn">Заберу отсюда</div>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="location-change-item active">
+															<div class="location-map"></div>
+														</div>
 													</div>
-													<div class="order-step order-step_nopad">
-														<div class="order-left">
-															<h6 class="order-title">Как с вами связаться?</h6>
-															<div class="connect-form">
-																<input type="text" class="location-input custom-input__input" placeholder="Фамилия, имя*" required="">
-																<input type="email" class="location-input custom-input__input" placeholder="Электронная почта*" required="">
-																<input type="phone" class="location-input custom-input__input" placeholder="Улица, номер дома*" required="">
-																<p class="connect-small">Номер телефона используется для оповещений об изменениях статуса заказа.</p>
-																<label class="location-label location-label_connect">
-																	<input type="checkbox" class="location-label-checkbox">
-																	<span class="location-label-check"></span>
-																	<p class="location-label-text">Позвоните мне для уточнения деталей и подтверждения заказа</p>
-																</label>
-																<label class="location-label location-label_connect">
-																	<input type="checkbox" class="location-label-checkbox">
-																	<span class="location-label-check"></span>
-																	<p class="location-label-text">Зарегистрировать меня</p>
-																</label>
-																<p class="location-description">* — поля, отмеченные звёздочкой, обязательны для заполнения</p>
+												</div>
+												<div class="location-item">
+													<h6 class="order-title">Выбранный пункт самовывоза</h6>
+													<div class="location-end">
+														<div class="location-end-content">
+															<div class="location-end-left">
+																<div class="list-name">
+																	<p class="list-name-title">Пункт выдачи посылок Boxberry  <span class="list-name-phone">+7(499)391-56-22</span></p>
+																	<p class="list-name-text">Королев г, 50-летия ВЛКСМ ул, д.6А</p>
+																</div>
+																<div class="list-date list-date_marg">
+																	<p class="list-date-day">Можно забрать с 21 декабря, через 10 дней</p>
+																	<p class="list-date-time">пн-пт:09.00-21.00, сб:11.00-18.00</p>
+																	<p class="list-date-time">В момент доставки заказа в пункт выдачи, вам поступит смс</p>
+																</div>
 															</div>
+															<div class="location-end-right">
+																<div class="location-end-top">
+																	<div class="location-end-item">
+																		<div class="location-end-name">Стоимость</div>
+																		<div class="list-price-number">199р.</div>
+																	</div>
+																	<div class="location-end-item">
+																		<div class="location-end-name">Способы оплаты</div>
+																		<div class="list-price-items">
+																			<img src="img/pay1.svg" alt="" width="16px">
+																			<img src="img/pay2.svg" alt="" width="14px">
+																		</div>
+																	</div>
+																</div>
+																<div class="location-end-bottom">
+																	<a href="" class="location-end-btn my-btn">Выбрать другой</a>
+																	<a href="tel:+74993915622" class="location-end-link">+7(499)391-56-22</a>
+																</div>
+																<p class="list-date-time list-date-time_mob">В момент доставки заказа в пункт выдачи, вам поступит смс</p>
+															</div>
+														</div>
+														<div class="location-end-map">
+															<div class="location-map"></div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="order-step">
-										<div class="order-left">
-											<h6 class="order-title">Как вам будет удобнее оплатить заказ?</h6>
-											<div class="order-delivery delivery">
-												<div class="delivery-tabs">
-													<div class="delivery-tab delivery-tab_courier active">
-														<p class="delivery-tab-title">При получении</p>
-														<label class="variant-label variant-label_pay">
-															<input name="variant-pay" type="radio" class="variant-input" checked>
-															<span class="variant-radio"></span>
-															<span class="variant-label-text">Наличными</span>
-														</label>
-														<label class="variant-label variant-label_pay">
-															<input name="variant-pay" type="radio" class="variant-input">
-															<span class="variant-radio"></span>
-															<span class="variant-label-text">Наличными</span>
-														</label>
-													</div>
-													<div class="delivery-tab delivery-tab_self">
-														<p class="delivery-tab-title">Онлайн</p>
-														<p class="delivery-tab-text variant-label-text">Принимаем банковские карты MasterCard, Visa, Мир.</p>
-													</div>
+										<div class="order-step">
+											<div class="order-left">
+												<h6 class="order-title">Как с вами связаться?</h6>
+												<div class="connect-form">
+													<input type="text" class="location-input custom-input__input" placeholder="Фамилия, имя*" required="">
+													<input type="email" class="location-input custom-input__input" placeholder="Электронная почта*" required="">
+													<input type="phone" class="location-input custom-input__input" placeholder="Улица, номер дома*" required="">
+													<p class="connect-small">Номер телефона используется для оповещений об изменениях статуса заказа.</p>
+													<label class="location-label location-label_connect">
+														<input type="checkbox" class="location-label-checkbox">
+														<span class="location-label-check"></span>
+														<p class="location-label-text">Позвоните мне для уточнения деталей и подтверждения заказа</p>
+													</label>
+													<label class="location-label location-label_connect">
+														<input type="checkbox" class="location-label-checkbox">
+														<span class="location-label-check"></span>
+														<p class="location-label-text">Зарегистрировать меня</p>
+													</label>
+													<p class="location-description">* — поля, отмеченные звёздочкой, обязательны для заполнения</p>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="order-step">
-										<div class="order-left">
-											<button type="submit" class="order-btn my-btn">Потвердить заказ</button>
-											<p class="order-description">Нажимая кнопку «Подтвердить заказ», вы подтверждаете, что согласны с <a
-													href="" class="order-link">Офертой</a> и предоставляете компании согласие на <a
-													href="" class="order-link">обработку ваших персональных данных.</a></p>
+										<div class="order-step">
+											<div class="order-left">
+												<h6 class="order-title">Как вам будет удобнее оплатить заказ?</h6>
+												<div class="order-delivery delivery delivery_second">
+													<div class="delivery-tabs">
+														<div class="delivery-tab delivery-tab_courier active">
+															<p class="delivery-tab-title">При получении</p>
+															<label class="variant-label variant-label_pay">
+																<input name="variant-pay" type="radio" class="variant-input" checked>
+																<span class="variant-radio"></span>
+																<span class="variant-label-text">Наличными</span>
+															</label>
+															<label class="variant-label variant-label_pay">
+																<input name="variant-pay" type="radio" class="variant-input">
+																<span class="variant-radio"></span>
+																<span class="variant-label-text">Наличными</span>
+															</label>
+														</div>
+														<div class="delivery-tab delivery-tab_self">
+															<p class="delivery-tab-title">Онлайн</p>
+															<p class="delivery-tab-text variant-label-text">Принимаем банковские карты MasterCard, Visa, Мир.</p>
+														</div>
+													</div>
+												</div>
+												<div class="mobile-btn my-btn mobile-btn_next">Продолжить</div>
+											</div>
 										</div>
-									</div>
-								</form>
+										<div class="order-step order-step_last">
+											<div class="order-left">
+												<button type="submit" class="order-btn my-btn">Потвердить заказ</button>
+												<p class="order-description">Нажимая кнопку «Подтвердить заказ», вы подтверждаете, что согласны с <a
+														href="" class="order-link">Офертой</a> и предоставляете компании согласие на <a
+														href="" class="order-link">обработку ваших персональных данных.</a></p>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="basket-right">
-						<div class="total">
-							<div class="total-top">
-								<h4 class="total-title">Состав заказа</h4>
-								<div class="total-row">
-									<p class="total-row-left">Товары (3)</p>
-									<p class="total-row-right">47 421р.</p>
+						<div class="basket-right">
+							<div class="total">
+								<div class="total-top">
+									<h4 class="total-title">Состав заказа</h4>
+									<div class="total-row">
+										<p class="total-row-left">Товары (3)</p>
+										<p class="total-row-right">47 421р.</p>
+									</div>
+									<div class="total-row">
+										<p class="total-row-left">Доставка курьером 13 декабря (чт), через 2 дня</p>
+										<p class="total-row-right">900р.</p>
+									</div>
+									<div class="total-row hide">
+										<p class="total-row-left">Способ оплаты</p>
+										<p class="total-row-right">При получении банковской картой</p>
+									</div>
+									<div class="total-row">
+										<p class="total-row-left">Скидки на товары</p>
+										<p class="total-row-right active">-13 942р.</p>
+									</div>
 								</div>
-								<div class="total-row">
-									<p class="total-row-left">Доставка курьером 13 декабря (чт), через 2 дня</p>
-									<p class="total-row-right">900р.</p>
-								</div>
-								<div class="total-row">
-									<p class="total-row-left">Скидки на товары</p>
-									<p class="total-row-right active">-13 942р.</p>
-								</div>
-							</div>
-							<div class="total-bottom">
-								<div class="total-row">
-									<p class="total-row-left dark">Итого к оплате</p>
-									<p class="total-row-right total-row-right_total">47 421р.</p>
+								<div class="total-bottom">
+									<div class="total-row">
+										<p class="total-row-left dark">Итого к оплате</p>
+										<p class="total-row-right total-row-right_total">47 421р.</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -468,7 +750,23 @@
 				</div>
 			</div>
 		</div>
+		<footer class="footer footer-basket">
+			<div class="container">
+				<div class="footer-basket-content">
+					<div class="footer-basket-left">
+						<p class="footer-basket-text">© 2018, mobilkid.ru</p>
+					</div>
+					<div class="footer-basket-right">
+						<p class="footer-basket-text footer-basket-text_sm">Принимаем банковские карты:</p>
+						<img src="img/visa.jpg" alt="" class="footer-basket-img">
+						<img src="img/mastercard.jpg" alt="" class="footer-basket-img">
+						<img src="img/mir.jpg" alt="" class="footer-basket-img">
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
+
 	<script src="js/jquery.min.js"></script>
 	<!--<script src="js/jquery-ui.min.js"></script>-->
 	<script src="libs/jquery/jquery-2.2.4.min.js"></script>

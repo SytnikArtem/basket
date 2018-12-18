@@ -56,48 +56,75 @@ table
   border-collapse: collapse
   border-spacing: 0
 .basket
-  padding: 25px
+  padding: 25px 0
   &-flex
     display: flex
     align-items: flex-start
     justify-content: space-between
   &-left
     width: 870px
+    &_sticky
+      position: sticky
+      left: 0
+      top: 0
+      z-index: 2
   &-right
     width: 270px
     margin-left: 30px
-    margin-top: 33px
   &-line
     width: 100%
     height: 8px
     background: #E6E6E6
     position: relative
+    left: 0
+    top: 0
+    margin-bottom: 25px
+    &.hide
+      display: none
     &-progress
       position: absolute
-      width: 30%
       height: 100%
       left: 0
       top: 0
       background: #F77173
   &-title
     font-size: 22px
-  &-main
-    margin-top: 25px
+    font-family: "ProximaNova-Bold", sans-serif
 .goods
   background: #FFFFFF
   border-radius: 8px
   padding: 35px 30px 20px
+  &.hide
+    display: none
+  &_success
+    display: none
+    &.active
+      display: block
   &-item
     display: flex
     align-items: flex-start
     justify-content: flex-start
     padding: 10px 0
     border-bottom: 1px solid #D8D8D8
-    &:last-child
+    position: relative
+    &:last-of-type
       border-bottom: none
-  &-img
+  &-close
+    position: absolute
+    width: 20px
+    height: 20px
+    cursor: pointer
+    top: 32px
+    right: 0
+  &-right
+    width: 100%
+    display: flex
+    justify-content: flex-start
+  &-left
     max-width: 147px
     margin-right: 25px
+    flex-shrink: 0
+    font-size: 0
   &-info
     width: 365px
     padding-right: 30px
@@ -154,6 +181,9 @@ table
   background: #FFFFFF
   padding: 35px 30px
   margin-top: 15px
+  display: block
+  &.hide
+    display: none
   &-btn
     width: 100%
     height: 62px
@@ -177,6 +207,7 @@ table
     &-city
       color: #F77273
       cursor: pointer
+      white-space: nowrap
     &-img
       width: 12px
       position: relative
@@ -206,7 +237,7 @@ table
     transition: all .5s ease
     &.active
       background: rgba(247, 113, 115, 0.06)
-      border-color: #707070
+      border-color: #F77273
     &-title
       font-size: 15px
       font-family: "ProximaNova-Bold"
@@ -249,7 +280,6 @@ table
     &-map
       border-radius: 0 0 8px 8px
       overflow: hidden
-      margin-bottom: 30px
   &-input
     outline: none
     &_md.custom-input__input
@@ -327,7 +357,7 @@ table
   &-description
     font-size: 14px
     color: #A9A9A9
-    margin: 25px 0 20px
+    margin: 25px 0 0
   &-pin
     display: flex
     &-tab
@@ -373,6 +403,9 @@ table
     display: none
     &.active
       display: block
+    &_success
+      display: block
+      margin-top: 20px
 .variant
   background: #F4F4F4
   border-radius: 8px
@@ -521,6 +554,8 @@ table
     display: flex
     justify-content: space-between
     margin-bottom: 10px
+    &.hide
+      display: none
     &-left
       line-height: 1.5
       max-width: 130px
@@ -530,6 +565,10 @@ table
     &-right
       margin-top: 5px
       color: #121212
+      font-family: "ProximaNova-Bold", sans-serif
+      max-width: 130px
+      text-align: right
+
       &.active
         color: #F77273
       &_total
@@ -538,4 +577,118 @@ table
   &-bottom
     background: #E6E6E6
     padding: 20px 20px 5px
+    font-family: "ProximaNova-Bold", sans-serif;
+.success
+  background: url(../img/success-bg.jpg) no-repeat center
+  background-size: cover
+  display: none
+  .container
+    width: 1210px
+  &.active
+    display: block
+  &-info
+    font-size: 16px
+    color: #FFFFFF
+  &-title
+    font-size: 40px
+    color: #FFFFFF
+    font-family: "ProximaNova-Bold"
+    margin-top: 5px
+    &_active
+      color: #FFDD6A
+  &-text
+    font-size: 16px
+    color: rgba(255, 255, 255, 0.8)
+    margin-top: 10px
+  &-description
+    font-size: 14px
+    color: #FFFFFF
+    margin-top: 20px
+  &-content
+    position: relative
+    padding: 60px 0 70px
+  &-img
+    position: absolute
+    bottom: 0
+    right: 17%
+.logo
+  max-width: 160px
+  display: block
+  img
+    max-width: 100%
+.header-basket
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 20px 0
+  &-right
+    a
+      text-decoration: none
+.footer
+  &-basket.footer
+    background: #FFFFFF
+    padding: 20px 0
+  &-basket
+    &-content
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-text
+      font-size: 14px
+      color: #888888
+    &-text
+      &_sm
+        font-size: 12px
+    &-right
+      display: flex
+      align-items: center
+      justify-content: flex-end
+    &-img
+      margin-left: 10px
+.delivery-tab
+  .variant-radio, .variant-input
+    margin-top: 1px
+.mobile-total
+  display: none
+  font-family: "ProximaNova-Bold"
+  &-left
+    font-size: 14px
+  &-right
+    font-size: 22px
+.mobile-btn.my-btn
+  display: none
+.goods-left
+  img
+    max-width: 100%
+.location-row-list
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 600px
+.location-pin-setting
+  display: none
+.location-row-right
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+.list-btn
+  display: none
+.location-end-link, .location-row-mobile, .mobile-first
+  display: none
+.mobile-second
+  display: none
+  &.active
+    display: block
+.goods-mobile
+  display: none
+  &.active.hide
+    display: block
+.mobile-items
+  display: none
+  &.active
+    display: flex
+.mobile-items
+  width: 60px
+
 @import "media" // Всегда в конце
